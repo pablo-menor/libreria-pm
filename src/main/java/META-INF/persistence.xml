@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="Libreria" transaction-type="RESOURCE_LOCAL">
+		<class>model.beans.Libro</class>
+		<class>model.beans.LineaPedido</class>
+		<class>model.beans.Pedido</class>
+		<class>model.beans.Perfile</class>
+		<class>model.beans.Tema</class>
+		<class>model.beans.Usuario</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://eu-cdbr-west-01.cleardb.com:3306/heroku_246f09fe55d4523?serverTimezone=UTC"/>
+			<property name="javax.persistence.jdbc.user" value="b81a79cd81e752"/>
+			<property name="javax.persistence.jdbc.password" value="c81d78d5"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+		</properties>
+	</persistence-unit>
+</persistence>

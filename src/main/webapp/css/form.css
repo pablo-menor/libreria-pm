@@ -1,0 +1,35 @@
+@charset "ISO-8859-1";
+
+body{
+	display: flex;
+	height: 100vh;
+	overflow-x: hidden;
+	justify-content:center; 
+	align-items:center;
+	flex-direction:column;
+	font-family: verdana;
+
+}
+
+form{
+	display: flex;
+	flex-direction:column;
+
+}
+
+form input{
+	margin-bottom: 10px;
+	text-align: center;
+	padding: 9px;
+}
+
+.submit{
+	cursor: pointer;
+	outline: none;
+	border: none;
+	background-color: #444444;
+	color: #ffffff;
+}
+.submit:hover{
+	background-color: #686a6a;
+}
